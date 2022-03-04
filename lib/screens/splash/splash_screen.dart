@@ -3,7 +3,7 @@ import 'package:tokoma/screens/splash/components/body.dart';
 import 'package:tokoma/size_config.dart';
 
 class SplashScreen extends StatelessWidget {
-  static String routeName = "/spllash";
+  static const routeName = "/splash";
 
   @override
   Widget build(BuildContext context) {

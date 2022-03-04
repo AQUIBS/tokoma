@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tokoma/constant.dart';
 import 'package:tokoma/route.dart';
 import 'package:tokoma/screens/splash/splash_screen.dart';
+import 'package:tokoma/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-          fontFamily: "Muli",
-          textTheme: const TextTheme(
-              bodyText1: TextStyle(color: kTextColor),
-              bodyText2: TextStyle(color: kTextColor)),
-          visualDensity: VisualDensity.adaptivePlatformDensity),
+      theme: theme(),
       // home: SplashScreen(),
       initialRoute: SplashScreen.routeName,
       routes: routes,

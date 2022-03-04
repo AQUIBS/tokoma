@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tokoma/constant.dart';
+import 'package:tokoma/screens/sign_in/sign_in_screen.dart';
+
 import 'package:tokoma/screens/splash/components/splash_content.dart';
 import 'package:tokoma/size_config.dart';
 
@@ -72,7 +74,12 @@ class _BodyState extends State<Body> {
                     ),
                     DefaultButton(
                       text: "Continue",
-                      press: () {},
+                      press: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignInScreen()));
+                      },
                     ),
                     const Spacer()
                   ],
