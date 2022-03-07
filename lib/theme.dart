@@ -11,6 +11,7 @@ ThemeData theme() {
       visualDensity: VisualDensity.adaptivePlatformDensity);
 }
 
+/// decoration theme for textformFeild
 InputDecorationTheme inputDecorationTheme() {
   OutlineInputBorder outlineInputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(20),

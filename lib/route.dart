@@ -7,8 +7,8 @@ import 'package:tokoma/screens/splash/splash_screen.dart';
 
 final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
-  ForgotPassword.routeName: (context) => ForgotPassword(),
-  LoginSuccess.routeName: (context) => LoginSuccess(),
+  ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
+  LoginSuccessScreen.routeName: (context) => LoginSuccessScreen(),
   SignInScreen.routeName: (context) => SignInScreen(),
   SignUpScreen.routeName: (context) => SignUpScreen(),
 };
